@@ -1,0 +1,60 @@
+/* 
+==================
+table of contents
+==================
+1- footer left
+2- footer right
+3- media query
+*/
+
+/* 
+==================
+1- footer left
+==================
+*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-left a {
+  text-decoration: none;
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.footer-left a:hover {
+  color: var(--blue);
+}
+/* 
+==================
+2- footer right
+==================
+*/
+.footer-right {
+  color: rgb(113, 113, 122);
+  font-size: 0.88rem;
+}
+/* 
+==================
+3- media query
+==================
+*/
+@media screen and (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .footer-right {
+    font-size: 0.85rem;
+  }
+}

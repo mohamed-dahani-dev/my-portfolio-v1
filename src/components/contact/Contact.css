@@ -1,0 +1,146 @@
+/* 
+==================
+table of contents
+==================
+1- left section
+2- right section
+3- media query
+*/
+
+/* 
+==================
+1- left section
+==================
+*/
+.contact-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-us .icon-envelope {
+  color: var(--subtitle);
+  font-size: 1.8rem;
+}
+.contact-us .contact-us-title {
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--title);
+  letter-spacing: 0.1rem;
+}
+.contact-us .contact-us-subtitle {
+  color: var(--subtitle);
+  margin: 1.5rem 0;
+  line-height: 1.65rem;
+}
+.contact-us label {
+  color: var(--subtitle);
+}
+.contact-us #email,
+.contact-us #message {
+  color: var(--title);
+  font-size: 16px;
+  background-color: #3f3f4626;
+  border: 1px solid #3f3f46;
+  width: 22rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.5s;
+}
+.contact-us #email:focus,
+.contact-us #message:focus {
+  border: 1px solid var(--blue);
+}
+.contact-us #email:hover,
+.contact-us #message:hover {
+  border: 1px solid var(--blue);
+}
+.contact-us #message {
+  min-height: 9rem;
+  resize: vertical;
+}
+.contact-us .contact-us-message,
+.contact-us .contact-us-email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.contact-us-left {
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  gap: 14px;
+}
+.contact-us .submit {
+  background-color: transparent;
+  color: var(--title);
+  text-align: center;
+  padding: 0.7rem 2rem;
+  margin-top: 0.4rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  border-radius: 8px;
+  border: 1px solid #3f3f46;
+  width: 5.86rem;
+  align-self: center;
+  margin-left: -4rem;
+}
+.contact-us .submit:hover {
+  background-color: var(--blue);
+  box-shadow: 0px 15px 20px #2e9fe566;
+  color: #fff;
+  transform: translateY(-7px);
+}
+.contact-us .submit:active {
+  transform: translateY(-1px);
+}
+
+/* in light mode */
+.light .contact-us #email,
+.light .contact-us #message {
+  background-color: #ffffff29;
+}
+.light .contact-us .submit:hover {
+  border: none;
+}
+
+/* 
+==================
+3- media query
+==================
+*/
+
+@media screen and (max-width: 930px) {
+  .contact-animation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-us .contact-us-right {
+    display: none;
+  }
+  .contact-us-left div {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-us-left {
+    width: 85%;
+    align-items: normal;
+  }
+  .contact-us .submit {
+    width: 30%;
+    margin-top: 10px;
+    align-self: normal;
+    margin-left: 0rem;
+  }
+  .contact-us-left label {
+    align-self: flex-start;
+  }
+  .contact-us-left #email,
+  .contact-us-left #message {
+    width: 100%;
+  }
+}

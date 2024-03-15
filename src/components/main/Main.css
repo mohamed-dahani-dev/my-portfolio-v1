@@ -1,0 +1,171 @@
+/* 
+==================
+table of contents
+==================
+1- left section
+2- right section
+3- media query
+*/
+
+/* 
+==================
+1- left section
+==================
+*/
+
+main .project-title {
+  font-size: 2.1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--title);
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  letter-spacing: 0.1rem;
+}
+main .icon-planet {
+  color: var(--subtitle);
+  font-size: 2.3rem;
+}
+.content-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.left-section-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.left-section-main button {
+  background-color: var(--mainButtonColor);
+  width: 11rem;
+  padding: 0.75rem 0;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.left-section-main button:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+button.btn-main-active {
+  opacity: 1;
+  font-weight: 500;
+  border: 1px solid var(--blue);
+  letter-spacing: 0.3px;
+  transform: scale(1.05);
+}
+
+/* on light mode */
+.light button.btn-main-active {
+  border: 1px solid #000;
+}
+.light .card,
+.light .card:hover {
+  border: none;
+}
+.light .card:hover {
+  background-color: #f6f6f6;
+}
+
+/* 
+==================
+2- right section
+==================
+*/
+.right-section-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.card .box {
+  padding: 0.8rem;
+}
+.box .box-title {
+  color: var(--title);
+  font-size: 18px;
+}
+.box .box-subtitle {
+  color: var(--subtitle);
+  font-size: 0.8rem;
+  margin: 0.8rem 0 1.5rem 0;
+  line-height: 1.1rem;
+}
+.card-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-icon .icon-github {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--subtitle);
+  transition: 0.5s;
+}
+.card-icon .icon-external-link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: var(--subtitle);
+  transition: 0.5s;
+}
+.icon-github:hover,
+.card-icon .icon-external-link:hover {
+  color: var(--title);
+}
+
+.card {
+  border: 1.5px solid var(--borderCard);
+  box-shadow: -1px 1px 1px #00000029, 1px 1px 1px #00000026;
+  border-radius: 10px;
+  background-image: linear-gradient(#ffffff0d, #ffffff0d);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.card:hover {
+  border: 1.5px solid var(--blue);
+  background-color: #202022;
+  transform: scale(1.03) !important;
+}
+.card img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+/* 
+==================
+3- media query
+==================
+*/
+
+@media screen and (max-width: 600px) {
+  main .project-title {
+    font-size: 1.8rem;
+  }
+  main .icon-planet {
+    font-size: 1.8rem;
+  }
+
+  .content-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2.65rem;
+  }
+  .left-section-main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .left-section-main button {
+    width: 7rem;
+    padding: 0.8rem 0;
+    font-size: 0.8rem;
+  }
+}

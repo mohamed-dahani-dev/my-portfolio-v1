@@ -1,0 +1,189 @@
+/* 
+==================
+table of contents
+==================
+1- header
+2- popup section
+3- btn icon sectioon
+4- media query
+*/
+
+/* 
+==================
+1- header
+==================
+*/
+header nav {
+  display: flex;
+  gap: 2.5rem;
+  background-color: var(--bgHeader);
+  padding: 0.77rem 1.6rem;
+  border-radius: 55px;
+  border: 1px solid var(--borderNav);
+}
+.light header nav {
+  box-shadow: 1px 1px 40px #2323242a;
+}
+nav a {
+  text-decoration: none;
+  color: var(--title);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.5s;
+  cursor: pointer;
+}
+nav a:hover {
+  opacity: 1;
+  color: var(--blue);
+}
+header button {
+  font-size: 1.2rem;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.menu {
+  display: none;
+}
+
+.icon-planet,
+.icon-user,
+.icon-code,
+header nav .icon-envelope {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+.menu-list .icon-envelope {
+  margin-right: 0.5rem;
+}
+
+/* 
+==================
+2- popup section
+==================
+*/
+
+.pop-up {
+  position: fixed;
+  background-color: #282830e6;
+  inset: 0;
+  z-index: 100;
+  backdrop-filter: blur(5px);
+}
+@keyframes movepopup {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.menu-list {
+  width: 85%;
+  margin: 2rem auto 0 auto;
+  background-color: var(--secondary);
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  animation: movepopup 0.77s 1;
+}
+.menu-list a {
+  text-decoration: none;
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0 1rem 0;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.menu-list a:hover {
+  color: var(--blue);
+  opacity: 1;
+}
+.menu-list a:last-child {
+  border: none;
+}
+.btnCloseMenu {
+  text-align: right;
+  padding: 0.5rem 0 0.5rem 0;
+}
+/* 
+==================
+3- btn icon sectioon
+==================
+*/
+.mode {
+  background-color: var(--bgHeader);
+  width: 2.4rem;
+  height: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--subtitle);
+  border: 1px solid #f4a5603f;
+  transition: 0.5s;
+}
+.light .mode {
+  box-shadow: 1px 1px 20px #2323242a;
+}
+.light .icon-sunny {
+  color: #ffa500;
+}
+
+.mode:hover {
+  color: var(--title);
+  border: 1px solid;
+  border: 1px solid #f4a560;
+}
+.icon-close {
+  font-size: 1.6rem;
+  color: var(--subtitle);
+  transition: 0.5s;
+}
+.icon-close:hover {
+  color: #dc143c;
+  rotate: 180deg;
+}
+/* 
+==================
+4- media query
+==================
+*/
+@media screen and (max-width: 700px) {
+  header nav {
+    display: none;
+  }
+  /* 
+    ==================
+    btn icon sectioon
+    ==================
+    */
+
+  .menu {
+    background-color: var(--bgHeader);
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid #f4a5603f;
+    transition: 0.5s;
+  }
+  .menu:hover {
+    color: var(--title);
+    border: 1px solid;
+    border: 1px solid #f4a560;
+  }
+}

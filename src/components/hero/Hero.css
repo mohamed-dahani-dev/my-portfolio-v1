@@ -1,0 +1,223 @@
+/* 
+==================
+table of contents
+==================
+1- left section
+2- right section
+3- media query
+*/
+
+/* 
+==================
+1-left section
+==================
+*/
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+.left-section-hero {
+  flex-grow: 1;
+}
+.hero-avatar {
+  display: flex;
+  gap: 0.6rem;
+  min-height: 100px;
+}
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #ff8c00;
+  padding: 1px;
+  box-shadow: 2px 2px 40px #cbc8c895 inset;
+}
+.icon-verified {
+  align-self: flex-end;
+  color: var(--blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+.left-section-hero .title {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  margin: 25px 0;
+  color: var(--title);
+}
+.left-section-hero .sub-title {
+  color: var(--subtitle);
+  font-size: 0.9rem;
+  line-height: 1.6rem;
+  margin-bottom: 32px;
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.1rem;
+  font-size: 1.5rem;
+}
+.social-media a {
+  text-decoration: none;
+}
+.icon {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--title);
+  border: 1.5px solid var(--subtitle);
+}
+.social-media .icon-x:hover {
+  background-color: #000;
+}
+.social-media .icon-instagram:hover {
+  background-color: #dd2a7b;
+}
+.social-media .icon-github:hover {
+  background-color: #fff;
+  color: #000;
+}
+.social-media .icon-linkedin-square:hover {
+  color: #0077b5;
+  background-color: #fff;
+}
+
+/* CV Button */
+.cv-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.download-cv {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  width: 13rem;
+  height: auto;
+}
+
+.download-cv .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+.download-cv .circle .download-cv-icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+.download-cv .circle .download-cv-icon.download-cv-arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+.download-cv .circle .download-cv-icon.download-cv-arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+.download-cv .download-cv-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: var(--title);
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.download-cv:hover .circle {
+  width: 100%;
+}
+
+.download-cv:hover .circle .download-cv-icon.download-cv-arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+.download-cv:hover .download-cv-text {
+  color: #fff;
+}
+
+/* On Light Mode */
+.light .social-media .icon-x:hover {
+  background-color: #000;
+  color: #f4f4f5;
+}
+.light .social-media .icon-instagram:hover {
+  background-color: #dd2a7b;
+  color: #f4f4f5;
+}
+.light .social-media .icon-github:hover {
+  background-color: #000;
+  color: #f4f4f5;
+}
+
+/* 
+==================
+2- right section
+==================
+*/
+
+.hero-animation {
+  width: 430px;
+}
+
+/* 
+==================
+3- media query
+==================
+*/
+
+@media screen and (max-width: 930px) {
+  .hero-animation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-section-hero .title {
+    font-size: 2.5rem;
+  }
+}
