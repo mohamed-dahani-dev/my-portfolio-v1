@@ -19,11 +19,14 @@
   flex-wrap: wrap;
   gap: 2rem;
 }
+.skills-cards a {
+  text-decoration: none;
+}
 
 /* React Card */
 .react-card {
   background-color: transparent;
-  border: 3px solid #61DAFB;
+  border: 3px solid #61dafb;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -32,7 +35,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #61DAFB;
+  color: #61dafb;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -48,7 +51,7 @@
 
 .js-card {
   background-color: transparent;
-  border: 3px solid #F7DF1E;
+  border: 3px solid #f7df1e;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -57,7 +60,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #F7DF1E;
+  color: #f7df1e;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -72,7 +75,7 @@
 
 .html-card {
   background-color: transparent;
-  border: 3px solid #E34F26;
+  border: 3px solid #e34f26;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -81,7 +84,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #E34F26;
+  color: #e34f26;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -96,7 +99,7 @@
 
 .css-card {
   background-color: transparent;
-  border: 3px solid #1572B6;
+  border: 3px solid #1572b6;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -105,7 +108,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #1572B6;
+  color: #1572b6;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -141,6 +144,30 @@
 .materialui-card img {
   width: 70px;
 }
+
+/* Bootstrap Card */
+.bootstrap-card {
+  background-color: transparent;
+  border: 3px solid #7311f5;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 30px 20px;
+  color: #7311f5;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 160px;
+  height: 180px;
+  transition: 0.5s;
+}
+.bootstrap-card span {
+  font-size: 70px;
+}
+
 /* Node Js Card */
 
 .nodejs-card {
@@ -169,7 +196,7 @@
 
 .mongodb-card {
   background-color: transparent;
-  border: 3px solid #47A248;
+  border: 3px solid #47a248;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -178,7 +205,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #47A248;
+  color: #47a248;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -193,7 +220,7 @@
 
 .mysql-card {
   background-color: transparent;
-  border: 3px solid #4479A1;
+  border: 3px solid #4479a1;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -202,7 +229,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #4479A1;
+  color: #4479a1;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -217,7 +244,7 @@
 
 .git-card {
   background-color: transparent;
-  border: 3px solid #F05032;
+  border: 3px solid #f05032;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -226,7 +253,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #F05032;
+  color: #f05032;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -241,7 +268,7 @@
 
 .typeScript-card {
   background-color: transparent;
-  border: 3px solid #007ACC;
+  border: 3px solid #007acc;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -250,7 +277,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #007ACC;
+  color: #007acc;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -265,7 +292,7 @@
 
 .laravel-card {
   background-color: transparent;
-  border: 3px solid #FF2D20;
+  border: 3px solid #ff2d20;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -274,7 +301,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #FF2D20;
+  color: #ff2d20;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -289,7 +316,7 @@
 
 .php-card {
   background-color: transparent;
-  border: 3px solid #777BB4;
+  border: 3px solid #777bb4;
   display: flex;
   gap: 2rem;
   flex-direction: column;
@@ -298,7 +325,7 @@
   font-size: 12px;
   font-weight: 700;
   padding: 30px 20px;
-  color: #777BB4;
+  color: #777bb4;
   border-radius: 20px;
   cursor: pointer;
   width: 160px;
@@ -314,6 +341,7 @@
 .html-card:hover,
 .css-card:hover,
 .materialui-card:hover,
+.bootstrap-card:hover,
 .nodejs-card:hover,
 .mongodb-card:hover,
 .mysql-card:hover,
@@ -325,7 +353,6 @@
   transform: scale(1.05);
 }
 @media screen and (max-width: 600px) {
-
   .skills .skills-title {
     font-size: 1.8rem;
   }
@@ -333,9 +360,7 @@
     font-size: 2rem;
   }
 
-
-
-  .skills-cards > div {
+  .skills-cards > a {
     width: 94px;
     height: 114px;
     font-size: 7px;
